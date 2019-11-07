@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Dyplom": {
+    "tmpDyplom": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Dyplom",
+            "outputPath": "dist/tmpDyplom",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -63,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Dyplom:build"
+            "browserTarget": "tmpDyplom:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Dyplom:build:production"
+              "browserTarget": "tmpDyplom:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Dyplom:build"
+            "browserTarget": "tmpDyplom:build"
           }
         },
         "test": {
@@ -111,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Dyplom:serve"
+            "devServerTarget": "tmpDyplom:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Dyplom:serve:production"
+              "devServerTarget": "tmpDyplom:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Dyplom"
+  "defaultProject": "tmpDyplom"
 }
