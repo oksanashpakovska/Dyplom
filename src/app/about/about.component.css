@@ -6,3 +6,7 @@
 .about-us {
     margin: 150px 0px 0px 0px;
 }
+.about-image{
+  background-image: url(https://palife.co.uk/wp-content/uploads/2018/06/Office-1-1080x658.jpg);
+  height: 25pc;
+}

@@ -1,6 +1,6 @@
   <div class="hero-wrap js-fullheight hotels-background"
     style="background-image:
-    url(https://images.trvl-media.com/hotels/1000000/10000/3700/3652/81cb7f93_z.jpg);">
+    url(https://www.nassauparadiseisland.com/sites/default/files/images/properties/hero/stay-atlantis-paradise-island.jpg);">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
@@ -31,10 +31,12 @@
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select name="" id="" class="form-control" placeholder="Keyword search">
                       <option value="">Select Location</option>
-                      <option value="">San Francisco USA</option>
+                      <option value="">London United Kingdom </option>
+                      <option value="">Paris France</option>
+                      <option value="">Rome Italy</option>
                       <option value="">Berlin Germany</option>
-                      <option value="">Lodon United Kingdom</option>
-                      <option value="">Paris Italy</option>
+                      <option value="">Beijing China</option>
+                      <option value="">Nassau Commonwealth of the Bahamas</option>
                     </select>
                   </div>
                 </div>
@@ -104,7 +106,11 @@
         </div>
         <div class="col-lg-9">
           <div class="row" >
-            <app-hotel-item *ngFor="let hotel of hotels" [singleHotel]="hotel"></app-hotel-item>
+            <div class="col-md-4 ftco-animate" *ngFor="let hotel of hotels">
+              <div class="destination">
+                <app-hotel-item  [singleHotel]="hotel"></app-hotel-item>
+              </div>
+            </div>
           </div>
           <div class="row mt-5">
             <div class="col text-center">
