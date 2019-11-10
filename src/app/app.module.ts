@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {HotelService} from "./hotel.service";
 import {TourService} from "./tour.service";
+import {RestaurantService} from "./restaurant.service";
+import { ShopService} from "./shop.service";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,8 @@ import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.compone
 import { FooterComponent } from './footer/footer.component';
 import { TourItemComponent } from './tour/tour-item/tour-item.component';
 import { TourDetailComponent } from './tour/tour-detail/tour-detail.component';
+import { RestorantItemComponent } from './home/restorant-item/restorant-item.component';
+import { ShopItemComponent } from './home/shop-item/shop-item.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +39,16 @@ import { TourDetailComponent } from './tour/tour-detail/tour-detail.component';
     HotelDetailComponent,
     FooterComponent,
     TourItemComponent,
-    TourDetailComponent
+    TourDetailComponent,
+    RestorantItemComponent,
+    ShopItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [ HotelService, TourService ],
+  providers: [HotelService, TourService, RestaurantService, ShopService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
