@@ -24,6 +24,8 @@ import { TourItemComponent } from './tour/tour-item/tour-item.component';
 import { TourDetailComponent } from './tour/tour-detail/tour-detail.component';
 import { RestorantItemComponent } from './home/restorant-item/restorant-item.component';
 import { ShopItemComponent } from './home/shop-item/shop-item.component';
+import { PopularHotelItemComponent } from './home/popular-hotel-item/popular-hotel-item.component';
+import { TopTourItemComponent } from './home/top-tour-item/top-tour-item.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ShopItemComponent } from './home/shop-item/shop-item.component';
     TourItemComponent,
     TourDetailComponent,
     RestorantItemComponent,
-    ShopItemComponent
+    ShopItemComponent,
+    PopularHotelItemComponent,
+    TopTourItemComponent
   ],
   imports: [
     BrowserModule,

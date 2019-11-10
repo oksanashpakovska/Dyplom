@@ -102,5 +102,8 @@ export class TourService{
     getAllTours(){
         return this.Tours.slice();
     }
+    getFiveTours(){
+        return this.Tours.slice(1);
+    }
 
 }

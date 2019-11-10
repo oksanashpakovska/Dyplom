@@ -1,0 +1,14 @@
+.imageses {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  /* padding: 5px; */
+  width: 253px;
+
+}
+
+.Text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 175px;
+  width: 219px;
+}

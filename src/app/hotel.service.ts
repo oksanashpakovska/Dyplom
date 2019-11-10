@@ -57,4 +57,7 @@ export class HotelService{
     getAllHotels(){
         return this.Hotels.slice();
     }
+    getFourHotels(){
+        return this.Hotels.slice(1);
+    }
 }

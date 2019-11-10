@@ -31,8 +31,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.Restaurants = this.restaurantService.getAllRestaurant();
-    this.Hotrls = this.hotelService.getAllHotels();
-    this.Tours = this.tourService.getAllTours();
+    this.Hotrls = this.hotelService.getFourHotels();
+    this.Tours = this.tourService.getFiveTours();
     this.Shops = this.shopService.getAllShops();
   }
 

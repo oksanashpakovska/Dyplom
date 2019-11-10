@@ -1,0 +1,31 @@
+<!-- <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
+  style="background-image: url(../images/hotel-2.jpg);">
+  <div class="icon d-flex justify-content-center align-items-center">
+    <span class="icon-search2"></span>
+  </div>
+</a> -->
+<img src="{{singleHotel.URL}}" class="img img-2 d-flex justify-content-center align-items-center imageses" />
+<div class="text p-3">
+  <div class="d-flex">
+    <div class="one">
+      <h3><a href="#">{{singleHotel.name}}</a></h3>
+      <p class="rate">
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star-o"></i>
+        <span>{{singleHotel.rating}} Rating</span>
+      </p>
+    </div>
+    <div class="two">
+      <span class="price per-price">${{singleHotel.price}}<br><small>/night</small></span>
+    </div>
+  </div>
+  <p class="Text-overflow">{{singleHotel.description}}</p>
+  <hr>
+  <p class="bottom-area d-flex">
+    <span><i class="icon-map-o"></i> {{singleHotel.country}}, {{singleHotel.city}}</span>
+    <span class="ml-auto"><a href="#">Book Now</a></span>
+  </p>
+</div>
