@@ -36,4 +36,14 @@ export class RestaurantService{
     getAllRestaurant(){
         return this.Restaurants.slice();
     }
+    SearchRestaurant(request:string){
+        let tmp:Restaurant[]=[];
+        for (let i = 0; i < this.Restaurants.length; i++) {
+            if(this.Restaurants[i].name.search(request)>=0){
+                tmp.push(this.Restaurants[i]);
+            }
+            
+        }
+        return tmp;
+    }
 }

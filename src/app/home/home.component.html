@@ -14,11 +14,11 @@
           <form action="" method="post" class="d-block d-flex">
             <div class="fields d-block d-flex">
               <div class="textfield-search one-third">
-                <input type="text" class="form-control" placeholder="Ex: food, service, hotel">
+                <input type="text" class="form-control" (change)="onChange($event)" placeholder=" food, service, hotel">
               </div>
-              <div class="select-wrap one-third">
+              <!-- <div class="select-wrap one-third" >
                 <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                <select name="" id="" class="form-control" placeholder="Keyword search">
+                <select name="" id="" class="form-control" (change)="onCountryChange($event)" placeholder="Keyword search">
                   <option value="">Where</option>
                   <option value="">London United Kingdom </option>
                   <option value="">Paris France</option>
@@ -27,9 +27,9 @@
                   <option value="">Beijing China</option>
                   <option value="">Nassau Commonwealth of the Bahamas</option>
                 </select>
-              </div>
+              </div> -->
             </div>
-            <input type="submit" class="search-submit btn btn-primary" value="Search">
+            <input type="submit" (click)="onSearch()" class="search-submit btn btn-primary" value="Search">
           </form>
         </div>
         <p>Or browse the highlights</p>
@@ -99,7 +99,7 @@
   </div>
 </section>
 
-<section class="ftco-section ftco-destination">
+<!-- <section class="ftco-section ftco-destination">
   <div class="container">
     <div class="row justify-content-start mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate">
@@ -198,7 +198,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="ftco-section bg-light">
   <div class="container">
@@ -324,9 +324,9 @@
         <span class="subheading">Testimony</span>
         <h2 class="mb-4 pb-3"><strong>Our</strong> Guests Says</h2>
         <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
+          <div class="col-md-12 carousel slide" data-ride="carousel">
+            <div class="carousel-testimony owl-carousel carousel-inner">
+              <div class="item carousel-item active">
                 <div class="testimony-wrap d-flex">
                   <div class="user-img mb-5" style="background-image: url(../images/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
@@ -341,7 +341,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item carousel-item">
                 <div class="testimony-wrap d-flex">
                   <div class="user-img mb-5" style="background-image: url(../images/person_2.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
@@ -356,7 +356,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item carousel-item">
                 <div class="testimony-wrap d-flex">
                   <div class="user-img mb-5" style="background-image: url(../images/person_3.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
@@ -423,8 +423,7 @@
       <div class="row d-flex justify-content-center">
         <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
           <h2>Subcribe to our Newsletter</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-            blind texts. Separated they live in</p>
+          <p></p>
           <div class="row d-flex justify-content-center mt-5">
             <div class="col-md-8">
               <form action="#" class="subscribe-form">

@@ -1,4 +1,5 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
+// import { FormGroup, FormBuilder } from '@angular/forms';
 
 import {RestaurantService} from "../restaurant.service";
 import {HotelService} from "../hotel.service";
@@ -17,23 +18,44 @@ import Shop from "../model/shop";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-//   myBackgroundImageUrl = 'https://www.exotictime.ru/workdir/photoalbum/f6fe55d7af945c2f32952b10505134a2/big_nymald.jpg'
-// @HostBinding('style.backgroundImage')
-// get backgroundImage(){
-//   return `url(${myBackgroundImageUrl})`
-// }
+
   Restaurants:Restaurant[]=[];
   Hotrls:Hotel[]=[];
   Tours:Tour[]=[];
   Shops:Shop[]=[];
+  HomeSearch:string;
 
-  constructor(private restaurantService: RestaurantService, private hotelService: HotelService, private tourService: TourService, private shopService: ShopService) { }
+  RestorantButton:boolean = false;
+
+  //CountrySearch:string;
+
+  // countryForm: FormGroup;
+  // countries = ['USA', 'Canada', 'Uk']
+
+
+  constructor(/*private fb: FormBuilder,*/private restaurantService: RestaurantService, private hotelService: HotelService, private tourService: TourService, private shopService: ShopService) { }
 
   ngOnInit() {
     this.Restaurants = this.restaurantService.getAllRestaurant();
     this.Hotrls = this.hotelService.getFourHotels();
     this.Tours = this.tourService.getFiveTours();
     this.Shops = this.shopService.getAllShops();
+    // this.countryForm = this.fb.group({
+    //   countryControl: ['Canada']
+    // });
   }
+  onSearch(){
+    //console.log(this.CountrySearch);
+    this.Restaurants = this.restaurantService.SearchRestaurant(this.HomeSearch);
+    this.Hotrls = this.hotelService.SearchHotels(this.HomeSearch);
+    this.Tours = this.tourService.SearchTours(this.HomeSearch);
+    this.Shops = this.shopService.SearchShops(this.HomeSearch);
+  }
+  onChange(event){
+    this.HomeSearch = event.target.value;
+  }
+  // onCountryChange(event){
+  //   this.CountrySearch = event;
+  // }
 
 }

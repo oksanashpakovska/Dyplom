@@ -3,7 +3,7 @@ import Hotel from "./model/hotel"
 export class HotelService{
     private Hotels:Hotel[]=[
         new Hotel(
-            "The Island House ",
+            "The Island House",
             "Commonwealth of the Bahamas",
             "Nassau",
             "Offering a year-round outdoor pool and spa centre, The Island House is located a 6-minute drive from the closest beach, Nirvana. The hotel has a terrace, and guests can enjoy a meal at the restaurant.",
@@ -59,5 +59,18 @@ export class HotelService{
     }
     getFourHotels(){
         return this.Hotels.slice(1);
+    }
+    SearchHotels(request:string){
+        let tmp:Hotel[]=[];
+        for (let i = 0; i < this.Hotels.length; i++) {
+            // console.log(request);
+            // console.log(this.Hotels[i].name);
+            // console.log(this.Hotels[i].name.search(request));
+
+            if (this.Hotels[i].name.search(request)>=0){
+                tmp.push(this.Hotels[i]);
+            }
+        }
+        return tmp.slice();
     }
 }

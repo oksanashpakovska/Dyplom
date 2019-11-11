@@ -40,4 +40,14 @@ export class ShopService{
     getAllShops(){
         return this.Shops.slice();
     }
+    SearchShops(request:string){
+        let tmp:Shop[]=[];
+        for(let i=0; i<this.Shops.length; i++){
+            if (this.Shops[i].name.search(request)>=0){
+                tmp.push(this.Shops[i]);
+            }
+        }
+        return tmp;
+    }
+    
 }

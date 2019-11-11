@@ -10,11 +10,23 @@ import Hotel from "../model/hotel";
 export class HotelsComponent implements OnInit {
     
     hotels:Hotel[];
+    reqwest:string;
 
   constructor(private hotelService:HotelService) { }
 
   ngOnInit() {
     this.hotels=this.hotelService.getAllHotels()
   }
+
+  onChange(event: any){
+    this.reqwest = event.target.value;
+    //console.log(this.reqwest);
+  }
+
+  onSearch(){
+    this.hotels = this.hotelService.SearchHotels(this.reqwest);
+    //console.log(this.hotels);
+  }
+  
 
 }

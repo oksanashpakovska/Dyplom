@@ -10,6 +10,7 @@ import Tour from "../model/tour";
 export class TourComponent implements OnInit {
 
   Tours:Tour[]=[];
+  reqwest:string;
 
   constructor(private tourService:TourService) {
     
@@ -17,6 +18,14 @@ export class TourComponent implements OnInit {
 
   ngOnInit() {
     this.Tours = this.tourService.getAllTours()
+  }
+
+  onChange(event: any) {
+    this.reqwest = event.target.value;
+  }
+
+  onSearch() {
+    this.Tours = this.tourService.SearchTours(this.reqwest);
   }
 
 }

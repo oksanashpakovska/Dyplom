@@ -105,5 +105,15 @@ export class TourService{
     getFiveTours(){
         return this.Tours.slice(1);
     }
+    SearchTours(request:string){
+        let tmp: Tour[] = [];
+        for (let i = 0; i < this.Tours.length; i++) {
+
+            if (this.Tours[i].country.search(request) >= 0) {
+                tmp.push(this.Tours[i]);
+            }
+        }
+        return tmp.slice();
+    }
 
 }
