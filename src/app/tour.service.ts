@@ -10,7 +10,7 @@ export class TourService{
             4,
             2000,
             5,
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjSVDG8YvC56G1XsVB2aKS8Oil--bPr-SoIN10X0rFSoxXy-WTw&s",
+            "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Caribbean/Bahamas/bahamas-overview-beach-xlarge.jpg",
             ["wonderful vacation full of impressions",
                 "Birthday in London, what could be more beautiful! DREAMS COME TRUE!!!",
                 "Probably one of the most impressive cities in the world."],
@@ -20,7 +20,9 @@ export class TourService{
             "http://www.woostercollective.com/bahamas-natural-bridge.jpg",
             "https://www.porthole.com/wp-content/uploads/2018/05/Cruise-Ships.jpg",
             "https://cdn.vallarta-adventures.com/sites/default/files/2018-08/1-IMAGE%20800x500-De_0.jpg",
-            "https://i0.wp.com/metro.co.uk/wp-content/uploads/2018/06/sei_19015383.jpg?quality=90&strip=all&zoom=1&resize=964%2C723&ssl=1"]
+            "https://i0.wp.com/metro.co.uk/wp-content/uploads/2018/06/sei_19015383.jpg?quality=90&strip=all&zoom=1&resize=964%2C723&ssl=1",
+            "http://www.joostvanuffelen.com/sites/default/files/styles/oyster_node_slider/public/field/image/DSC_4907_edit%20%28Large%29.jpg?itok=_Qrd_p8I",
+            "https://images.musement.com/cover/0002/89/thumb_188439_cover_header.jpeg?w=1200&h=630&q=60&fit=crop"]
         ),
         new Tour(
             2,
@@ -36,7 +38,10 @@ export class TourService{
              "Probably one of the most impressive cities in the world."],
             ["https://upload.wikimedia.org/wikipedia/commons/a/a6/Trafalgar_Square%2C_London_2_-_Jun_2009.jpg",
              "https://upload.wikimedia.org/wikipedia/commons/2/2c/Tower_of_London_viewed_from_the_River_Thames.jpg",
-             "http://london.kiev.ua/images/phocagallery/bykingemskii-dvorec-v-londone/thumbs/phoca_thumb_l_cvetyshie-tulpanu-na-fone-dvorca.jpg"]
+             "http://london.kiev.ua/images/phocagallery/bykingemskii-dvorec-v-londone/thumbs/phoca_thumb_l_cvetyshie-tulpanu-na-fone-dvorca.jpg",
+              "https://www.iecabroad.com/wp-content/uploads/2015/12/London-Eye-day.jpg",
+                "https://cdn.cdnfarecompare.com/resources/mcms/dealimages/large-deals-skp-1.jpg",
+                "https://s1.travix.com/eu/europe-united-kingdom-london-st-pauls-cathedral-milennium-bridge-large.jpg"]
         ),
         new Tour(
             3,
@@ -46,13 +51,16 @@ export class TourService{
             4,
             2000,
             7,
-            "https://paris10.ru/sites/paris10.ru/files/styles/large_640_425_/public/field/image/eiffel-tower-3349075_1920.jpg?itok=r60aJzKv",
+            "https://www.fcmtravel.com/sites/default/files/styles/large/public/FCM_parismustdos_1920x1080_0.jpg?itok=g3Vp_tLb",
             ["wonderful vacation full of impressions",
             "Birthday in London, what could be more beautiful! DREAMS COME TRUE!!!",
             "Probably one of the most impressive cities in the world."],
-            ["https://media.tacdn.com/media/attractions-splice-spp-360x240/06/74/aa/fc.jpg",
-             "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e4/a8/99.jpg", 
-             "https://media-cdn.tripadvisor.com/media/photo-s/01/7f/bd/40/paris.jpg"]
+            ["https://www.tripsavvy.com/thmb/QBJgdPTrHkUK8N0741HBNrfTsWE=/2754x1964/filters:no_upscale():max_bytes(150000):strip_icc()/DSC_0030-5c65df8bc9e77c00017fb8b0.jpg",
+             "https://i.pinimg.com/originals/7a/e3/f3/7ae3f3d0afae64b22a9b7c89d879f328.jpg", 
+             "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/Free/sacre-coeur-paris-france-p-xlarge.jpg",
+            "http://www.desktopimages.org/pictures/2013/0717/1/france-rivers-notre-dame-de-paris-cities-images-226871.jpg",
+            "https://live.staticflickr.com/8159/28848781165_6a1db42a70_b.jpg",
+            "https://s1.reutersmedia.net/resources/r/?m=02&d=20190416&t=2&i=1377634652&r=LYNXNPEF3F142&w=1280"]
         ),
         new Tour(
             4,
@@ -69,7 +77,9 @@ export class TourService{
             ["https://www.worldtravel.kiev.ua/198stitle/avia-tur.-rim---milan.jpg",
              "https://www.tripsavvy.com/thmb/9iqDi0Z_KcDjfs_1nqClNYDq8UI=/3862x2578/filters:no_upscale():max_bytes(150000):strip_icc()/piazza-navona-598253135-5ad6043a30371300375af805.jpg",
               "https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/Castles-In-Italy-Cover.jpg",
-              "http://imperialstyle.eu/sites/lemanvip/files/styles/large/public/Boscolo%20Exedra.JPG?itok=cdiqLVJP"]
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Fa%C3%A7ade_of_St._Peter%27s_Basilica_2.JPG/1280px-Fa%C3%A7ade_of_St._Peter%27s_Basilica_2.JPG",
+                "https://www.teggelaar.com/rome/images/imagesub/imrome/R100987.jpg",
+                "https://intrepid-guewuklbkgvxhkhdo.stackpathdns.com/wp-content/uploads/2018/06/rome-tips-and-tricks-27-things-you-should-know-before-you-go-to-rome.jpg"]
         ),
         new Tour(
             5,
@@ -79,13 +89,15 @@ export class TourService{
             4,
             2000,
             15,
-            "http://www.lasallianstudyabroad.com/sites/default/files/images/Charlottenburg-Berlin-Germany.jpg",
+            "https://static3.mansionglobal.com/production/media/article-images/45ef30aec49633414b49e4522017945e/large_take_berlin.jpg",
             ["wonderful vacation full of impressions",
             "Birthday in London, what could be more beautiful! DREAMS COME TRUE!!!",
              "Probably one of the most impressive cities in the world."],
             ["https://www.thelocal.de/userdata/images/article/3055de7f5332b984d7dade29667f67254eb8887766d5b91c179e435d412aa8d7.jpg",
              "https://feerie.com.ua/sites/default/files/styles/for_tour2/public/2019-05/hoteles-en-berlin-mercado-navidad-berlin.jpg?h=920929c4&itok=gTbsjean",
-              "images3"]
+              "https://i.ytimg.com/vi/W6Um6ddhGU8/maxresdefault.jpg",
+                "https://www.welcome-to-berlin.com/images/East/Sightseeing/top10/Berliner_Dom/Berliner_Dom2.jpg",
+            "https://assets3.thrillist.com/v1/image/1752974/size/tmg-facebook_social.jpg"]
         ),
         new Tour(
             6,
@@ -95,13 +107,16 @@ export class TourService{
             4,
             3000,
             9,
-            "https://data.travelchinaguide.com/package/image/great-wall10_0905193.jpg",
+            "https://www.chinainternshipplacements.com/blog/wp-content/uploads/hubfs/hubnew/Best-Great-Wall-Beijing-Tours-packages-56323d910c36e780b516.jpg",
             ["wonderful vacation full of impressions",
                 "Birthday in London, what could be more beautiful! DREAMS COME TRUE!!!",
                 "Probably one of the most impressive cities in the world."],
             ["https://feerie.com.ua/sites/default/files/styles/for_country/public/2019-01/kit1.jpg?itok=r9CLV0Gc",
              "https://feerie.com.ua/sites/default/files/styles/for_country/public/2019-01/ifYus6JMXnITf9AA0od274BvLF0ofiPW_0.jpg?itok=J38paULw",
-              "https://feerie.com.ua/sites/default/files/styles/for_country/public/2019-01/4d7dca06280e4aa18b60cf7b8ca488e9.jpg?itok=3T4gu0p3"]
+              "https://feerie.com.ua/sites/default/files/styles/for_country/public/2019-01/4d7dca06280e4aa18b60cf7b8ca488e9.jpg?itok=3T4gu0p3",
+            "https://pix10.agoda.net/hotelImages/2054/-1/89c6b9fa8802e4d2e4bd856b74779ee4.jpg?s=1024x768",
+            "https://live.staticflickr.com/4103/5078067605_0525a36afd_b.jpg",
+            "https://i.imgur.com/As5tuBn.jpg"]
         )
         
     ]
