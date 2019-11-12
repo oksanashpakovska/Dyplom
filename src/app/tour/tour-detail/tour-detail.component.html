@@ -1,1 +1,65 @@
-<p>tour-detail works!</p>
+ <!-- <div class="col-md-4 ftco-animate">
+   <div class="destination"> -->
+ <!-- <a href="#" class="img img-2 d-flex justify-content-center align-items-center"
+       style="background-image: url(images/destination-1.jpg);">
+       <div class="icon d-flex justify-content-center align-items-center">
+         <span class="icon-search2"></span>
+       </div>
+     </a> -->
+ <img src="{{singleTour.URL}}" class="hero-wrap js-fullheight imageses" />
+ <div class="text p-3">
+   <div class="d-flex">
+     <div class="one">
+       <h3><a>{{singleTour.city}}, {{singleTour.country}}</a></h3>
+       <p class="rate">
+         <i class="icon-star"></i>
+         <i class="icon-star"></i>
+         <i class="icon-star"></i>
+         <i class="icon-star"></i>
+         <i class="icon-star-o"></i>
+         <span>{{singleTour.rating}}</span>
+       </p>
+       <p class="days"><span>{{singleTour.days}} days {{singleTour.days}} nights</span></p>
+
+     </div>
+     <div class="two align-items-center">
+       <span class="price btn btn-primary">Buy Tour</span>
+     </div>
+   </div>
+   <p class="">{{singleTour.description}}</p>
+   <hr>
+   <p class="bottom-area d-flex">
+     <span><i class="icon-map-o"></i> </span>
+     <span class="ml-auto"><a href="#">Discover</a></span>
+   </p>
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+       <li data-target="#carouselExampleIndicators" class="active"></li>
+       <li data-target="#carouselExampleIndicators" *ngFor="let item of singleTour.images; let i = index"
+         [attr.data-index]="i"
+         ></li>
+       <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+     </ol>
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+           <img src="{{singleTour.URL}}" class="d-block w-100 skrean" alt="...">
+         </div>
+       <div class="carousel-item" *ngFor="let img of singleTour.images">
+         <img src="{{img}}" class="d-block w-100 skrean" alt="...">
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="sr-only">Next</span>
+     </a>
+   </div>
+ </div>
+ <!-- </div>
+ </div> -->
+
+
+

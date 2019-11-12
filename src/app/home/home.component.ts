@@ -26,6 +26,9 @@ export class HomeComponent implements OnInit {
   HomeSearch:string;
 
   RestorantButton:boolean = false;
+  HotelButton:boolean = false;
+  TourButton:boolean = false;
+  ShopButton:boolean=false;
 
   //CountrySearch:string;
 

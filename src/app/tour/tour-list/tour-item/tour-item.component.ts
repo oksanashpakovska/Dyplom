@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import Tour from "../../model/tour";
+import Tour from "../../../model/tour";
 
 @Component({
   selector: 'app-tour-item',
@@ -13,6 +13,7 @@ export class TourItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.singleTour);
   }
 
 }

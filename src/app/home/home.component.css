@@ -6,3 +6,8 @@
 .home-explore{
     margin: 150px 0px 0px 0px;
 }
+
+.ActiveBType{
+    color: white;
+    background-color: #f85959;
+}

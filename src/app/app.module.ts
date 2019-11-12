@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { TourComponent } from './tour/tour.component';
+//import { TourComponent } from './tour/tour.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
@@ -21,19 +21,20 @@ import { HeaderComponent } from './header/header.component';
 import { HotelItemComponent } from './hotels/hotel-item/hotel-item.component';
 import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.component';
 import { FooterComponent } from './footer/footer.component';
-import { TourItemComponent } from './tour/tour-item/tour-item.component';
-import { TourDetailComponent } from './tour/tour-detail/tour-detail.component';
+//import { TourItemComponent } from './tour/tour-list/tour-item/tour-item.component';
+//import { TourDetailComponent } from './tour/tour-detail/tour-detail.component';
 import { RestorantItemComponent } from './home/restorant-item/restorant-item.component';
 import { ShopItemComponent } from './home/shop-item/shop-item.component';
 import { PopularHotelItemComponent } from './home/popular-hotel-item/popular-hotel-item.component';
 import { TopTourItemComponent } from './home/top-tour-item/top-tour-item.component';
+import { TourModule } from './tour/tour.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    TourComponent,
+    //TourComponent,
     HotelsComponent,
     BlogComponent,
     ContactComponent,
@@ -41,8 +42,8 @@ import { TopTourItemComponent } from './home/top-tour-item/top-tour-item.compone
     HotelItemComponent,
     HotelDetailComponent,
     FooterComponent,
-    TourItemComponent,
-    TourDetailComponent,
+    //TourItemComponent,
+    //TourDetailComponent,
     RestorantItemComponent,
     ShopItemComponent,
     PopularHotelItemComponent,
@@ -50,9 +51,10 @@ import { TopTourItemComponent } from './home/top-tour-item/top-tour-item.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    TourModule,
+    AppRoutingModule
   ],
   providers: [HotelService, TourService, RestaurantService, ShopService ],
   bootstrap: [AppComponent]
