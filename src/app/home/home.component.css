@@ -11,3 +11,9 @@
     color: white;
     background-color: #f85959;
 }
+
+.destination {
+  display: block;
+  width: 13rem;
+  margin-bottom: 30px;
+}

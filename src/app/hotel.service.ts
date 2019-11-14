@@ -60,17 +60,31 @@ export class HotelService{
     getFourHotels(){
         return this.Hotels.slice(1);
     }
-    SearchHotels(request:string){
+    SearchHotels(request:string, isHome:boolean){
         let tmp:Hotel[]=[];
-        for (let i = 0; i < this.Hotels.length; i++) {
-            // console.log(request);
-            // console.log(this.Hotels[i].name);
-            // console.log(this.Hotels[i].name.search(request));
+        if(isHome){
+            for (let i = 0; i < this.Hotels.length; i++) {
+                // console.log(request);
+                // console.log(this.Hotels[i].name);
+                // console.log(this.Hotels[i].name.search(request));
 
-            if (this.Hotels[i].name.search(request)>=0){
-                tmp.push(this.Hotels[i]);
+                if (this.Hotels[i].name.search(request) >= 0 && tmp.length<5) {
+                    tmp.push(this.Hotels[i]);
+                }
             }
         }
+        else{
+            for (let i = 0; i < this.Hotels.length; i++) {
+                // console.log(request);
+                // console.log(this.Hotels[i].name);
+                // console.log(this.Hotels[i].name.search(request));
+                
+                if (this.Hotels[i].name.search(request)>=0){
+                    tmp.push(this.Hotels[i]);
+                }
+            }
+        }
+        console.log(tmp);
         return tmp.slice();
     }
 }

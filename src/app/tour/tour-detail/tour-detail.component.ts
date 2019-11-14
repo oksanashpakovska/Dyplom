@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-//import { RouteParams } from '@angular/router';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { Router, ActivatedRoute } from '@angular/router';
 import{ TourService} from "../../tour.service"
 import Tour from "../../model/tour";
-import { Observable } from 'rxjs';
 
 
 @Component({
@@ -16,9 +13,8 @@ export class TourDetailComponent implements OnInit {
 
   singleTour:Tour;
 
-  data: any;
-  constructor(/*params: RouteParams*/private route: ActivatedRoute, private router: Router, private service: TourService) {
-    //this.data = params.get('data');
+  constructor(private route: ActivatedRoute, private router: Router, private service: TourService) {
+
   }
 
   ngOnInit() {

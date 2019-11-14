@@ -50,8 +50,8 @@ export class HomeComponent implements OnInit {
   onSearch(){
     //console.log(this.CountrySearch);
     this.Restaurants = this.restaurantService.SearchRestaurant(this.HomeSearch);
-    this.Hotrls = this.hotelService.SearchHotels(this.HomeSearch);
-    this.Tours = this.tourService.SearchTours(this.HomeSearch);
+    this.Hotrls = this.hotelService.SearchHotels(this.HomeSearch,true);
+    this.Tours = this.tourService.SearchTours(this.HomeSearch,true);
     this.Shops = this.shopService.SearchShops(this.HomeSearch);
   }
   onChange(event){

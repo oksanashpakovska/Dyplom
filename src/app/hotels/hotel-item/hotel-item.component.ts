@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef} from '@angular/core';
+import { Component, OnInit, Input /*, ElementRef*/} from '@angular/core';
 import Hotel from "../../model/hotel";
 
 @Component({
@@ -10,20 +10,20 @@ export class HotelItemComponent implements OnInit {
 
   @Input() singleHotel:Hotel;
 
-  constructor(private el: ElementRef) { }
+  constructor(/*private el: ElementRef*/) { }
 
   ngOnInit() {
-    let style: string = `
-     .imageses {background-image :url("${this.singleHotel.URL}"); }
-    `;
+    // let style: string = `
+    //  .imageses {background-image :url("${this.singleHotel.URL}"); }
+    // `;
 
-    this.createStyle(style);
+    // this.createStyle(style);
   }
 
-  createStyle(style: string): void {
-    const styleElement = document.createElement('style');
-    styleElement.appendChild(document.createTextNode(style));
-    this.el.nativeElement.appendChild(styleElement);
-  }
+  // createStyle(style: string): void {
+  //   const styleElement = document.createElement('style');
+  //   styleElement.appendChild(document.createTextNode(style));
+  //   this.el.nativeElement.appendChild(styleElement);
+  // }
 
 }

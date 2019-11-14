@@ -6,3 +6,8 @@
      margin: 150px 0px 0px 0px;
      
 }
+.destination {
+  display: block;
+  width: 16rem;
+  margin-bottom: 30px;
+}

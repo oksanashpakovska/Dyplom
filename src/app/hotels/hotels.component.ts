@@ -24,7 +24,7 @@ export class HotelsComponent implements OnInit {
   }
 
   onSearch(){
-    this.hotels = this.hotelService.SearchHotels(this.reqwest);
+    this.hotels = this.hotelService.SearchHotels(this.reqwest,false);
     //console.log(this.hotels);
   }
   

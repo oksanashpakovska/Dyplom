@@ -26,7 +26,7 @@ export class TourListComponent implements OnInit {
   }
 
   onSearch() {
-    this.Tours = this.tourService.SearchTours(this.reqwest);
+    this.Tours = this.tourService.SearchTours(this.reqwest,false);
   }
 
 }

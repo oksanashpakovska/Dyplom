@@ -126,12 +126,22 @@ export class TourService{
     getFiveTours(){
         return this.Tours.slice(1);
     }
-    SearchTours(request:string){
+    SearchTours(request:string,isHome:boolean){
         let tmp: Tour[] = [];
-        for (let i = 0; i < this.Tours.length; i++) {
+        if(isHome){
+            for (let i = 0; i < this.Tours.length; i++) {
 
-            if (this.Tours[i].country.search(request) >= 0) {
-                tmp.push(this.Tours[i]);
+                if (this.Tours[i].country.search(request) >= 0 && tmp.length<5) {
+                    tmp.push(this.Tours[i]);
+                }
+            }
+        }
+        else{
+            for (let i = 0; i < this.Tours.length; i++) {
+                
+                if (this.Tours[i].country.search(request) >= 0) {
+                    tmp.push(this.Tours[i]);
+                }
             }
         }
         return tmp.slice();
